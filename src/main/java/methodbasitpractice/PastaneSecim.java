@@ -1,10 +1,8 @@
 package methodbasitpractice;
 
-import java.sql.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class BasitPractice {
+public class PastaneSecim {
     public static String[] unluMamul = {"(1),Poğaça", "(2),Ekmek", "(3),Simit", "(4),Börek", "(5),Pasta", "(6),Baklava"};
     public static double[] mamulFiyat = {8, 5, 10, 75, 100, 170};
     static String birlikte = unluMamul[0] + " = " + mamulFiyat[0] + "₺ \n" + unluMamul[1] + " = " + mamulFiyat[1] + "₺ \n" + unluMamul[2]
@@ -18,23 +16,22 @@ public class BasitPractice {
 
     public static void urunSecimi() {
         System.out.println(birlikte);
-                 idx();
-
-
+        System.out.println("toplam Tutar = "+toplamTutar);
+        idx();
 
 
     }
 
 
     public static void idx() {
-        System.out.println("lütfen ürün kodunu giriniz" + "çıkmak için = " + "0" + "kullanınız");
+        System.out.println("lütfen ürün kodunu giriniz  " + " çıkmak için = " + "0" + " kullanınız");
         idx = input.nextInt();
         System.out.println("lütfen miktar girinz");
         int mamulMiktar = input.nextInt();
 
         if (idx == 0) {
             System.out.println(toplamTutar);
-        }else if (idx == 1) {
+        } else if (idx == 1) {
             toplamTutar += mamulMiktar * mamulFiyat[0];
             System.out.println(toplamTutar);
         } else if (idx == 2) {
@@ -59,11 +56,18 @@ public class BasitPractice {
 
 
         }
+
     }
 
     public static void main(String[] args) {
+        for (int i=0;i<i+1;i++) {
+            urunSecimi();
+            if (idx==0) {
+                break;
+            }
 
-        urunSecimi();
+        }
+
     }
 
 }

@@ -1,0 +1,7 @@
+Names;
+1) Ali
+2) Ahmet
+3) Mehmet
+4) Emre
+5) Burak
+6) Kerem
