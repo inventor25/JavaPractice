@@ -1,5 +1,6 @@
 package javaslidesspractice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class KonuTekrari02 {
@@ -24,18 +25,26 @@ public class KonuTekrari02 {
          */
         //"oku oku da adam ol baban gibi, essek olma" ""baban" ve "gibi" kelimelerini yan yana yazdırın
         //adam ol split kullarak yazdır
-        System.out.println("oku oku da adam ol baban gibi, essek olma");
-        String cumle = "oku oku da adam ol baban gibi, essek olma";
-        String bolunmus = (cumle.substring(18, 24) + cumle.substring(24, 29));
-        System.out.println(bolunmus);
-        String yeniCumle = cumle.replaceAll("o", "O");
-        System.out.println(yeniCumle);
-        int num = yeniCumle.replaceAll(" ", "").length();
-        System.out.println(num);
+      //  System.out.println("oku oku da adam ol baban gibi, essek olma");
+      //  String cumle = "oku oku da adam ol baban gibi, essek olma";
+      //  String bolunmus = (cumle.substring(18, 24) + cumle.substring(24, 29));
+      //  System.out.println(bolunmus);
+      //  String yeniCumle = cumle.replaceAll("o", "O");
+      //  System.out.println(yeniCumle);
+      //  int num = yeniCumle.replaceAll(" ", "").length();
+      //  System.out.println(num);
+//
+      //  String yaz = yeniCumle.replaceAll("oku", "yaz");
+        //
+      //  System.out.println(yaz);
 
-        String yaz = yeniCumle.replaceAll("oku", "yaz");
+        int[] arr1 ={1,2,3};
+        int[] arr2 ={1,2,3};
 
-        System.out.println(yaz);
+        System.out.println(arr1==arr2);
+        System.out.println(arr1==arr1);
+        System.out.println(Arrays.equals(arr1,arr2));
+        System.out.println(arr1.equals(arr2));
 
 
     }
